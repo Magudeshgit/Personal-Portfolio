@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import { Inter } from "next/font/google";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,8 +32,36 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${inter.variable} antialiased`}
+      > 
+        <NavigationMenu className="w-full [&>div]:!static">
+          <NavigationMenuList className="justify-between min-w-full [&>div]:!static">
+            
+            
+            <NavigationMenuItem>
+              <NavigationMenuLink>
+                lkasjl  
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              kjlsj
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink>
+                lakdj
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuLink>
+                lasdkj
+              </NavigationMenuLink>
+            </NavigationMenuItem>  
+
+          </NavigationMenuList> 
+        </NavigationMenu> 
         {children}
       </body>
     </html>
