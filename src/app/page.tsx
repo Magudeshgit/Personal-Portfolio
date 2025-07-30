@@ -33,9 +33,9 @@ export default function Home() {
 
 
         <div className="max-w-full md:w-[50%] flex flex-col">
-          <p className="text-xl font-semibold text-gray-400">I'M</p>
+          <p className="text-xl md:text-3xl font-semibold text-gray-400">I'M</p>
           <p className="text-[26.9px] md:text-5xl font-bold uppercase">Magudeshwaran K</p>
-          <p className="font-light text-xs">Fullstack Engineer | System Design Thinker | UI Designer</p>
+          <p className="font-light text-xs md:text-base tracking-widest">Fullstack Engineer | System Design Thinker | UI Designer</p>
           <div className="inline-flex mt-2">
             <div className="ring-1 ring-gray-100 bg-gray-100 text-left rounded-md pl-3 pr-6 py-1 text-xs inline-flex items-center gap-2 text-gray-500 justify-start cursor-pointer">
               <div className="rounded-full p-1 bg-gray-200">
